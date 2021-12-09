@@ -1,7 +1,8 @@
 # Wrapper Script for Readme Verification
 [CmdletBinding()]
 param (
-  [string]$DocWardenVersion = "0.7.2",
+  [Parameter(Mandatory = $true)]
+  [string]$DocWardenVersion,
   [Parameter(Mandatory = $true)]
   [string]$ScanPath,
   [string]$RepoRoot,
